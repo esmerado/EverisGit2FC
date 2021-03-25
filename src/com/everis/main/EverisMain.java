@@ -1,5 +1,8 @@
 package com.everis.main;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Formación - GIT
  * 
@@ -14,10 +17,18 @@ public class EverisMain {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+
 		System.out.println("Hola a tod@s");
-		
+
 		/* INTRODUCIR NUEVOS SALUDOS */
+
+		List<String> lista = new ArrayList<String>();
+
+		lista.add("Hola");
+		lista.add("Mundo");
+		lista.add("Javier Esmerado Vela");
+
+		lista.stream().forEach(System.out::println);
 
 	}
 
